@@ -41,6 +41,7 @@ body {
   /* Rulesets to be matched up with selectors */
   
 /* Style for card container */
+
   .card {
     width: 35em;
     height: 22em;
@@ -50,6 +51,16 @@ body {
     border-radius: 1.5em;
   }
   
+  #joey-card {
+    width: 35em;
+    height: 22em;
+    margin: 5em auto;
+    background-color: teal;
+    border: 0.2em solid black;
+    border-radius: 1.5em;
+    font-family: Copperplate, Papyrus, fantasy;
+  }
+*/
   /* two rules below are styles for the card header and footer */
 
   .card header {
@@ -74,8 +85,12 @@ body {
     padding: 1em 1em 1em 1em;
   }
 
+  
+
   /* style for card image */
   .card article img {
     max-height: 100%;
     float: right;
   }
+
+  
