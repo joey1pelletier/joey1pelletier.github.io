@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:wght@300&display=swap');
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+    
+}
+
+.title-box {
+    background-color: black;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    position: sticky;
+    padding: 1em;
+    margin: 0;
+}
+
+#title-text {
+    font-family: cursive;
+    text-align: center;
+    color: #FBC16A;
+}
+
+.image-text {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(img/symphony.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 50vw;
+    margin: 0;
+    text-align: center;
+    padding-top: 1em;
+
+}
+
+#harmony {
+    font-size: 3.5vw;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    padding: 1em;    
+}
+
+.bordered-text {
+    color: white;
+    border: 1px solid;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5vw;
+    margin: 2em;
+}
+
+.bordered-text p {
+    margin: 1em;
+}
+
+#see-schedule {
+    font-size: 2.5vw;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    padding: 2em;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    text-align: center;
+}
+
+.container-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100vw;
+    text-align: center;
+}
+
+.sub-container-1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2vw;
+    background-color: #FBC16A;
+    width: 50vw;
+    height: 50vw;
+    margin: 0;
+    text-align: center;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-container-2 {
+    font-family: 'Open Sans', sans-serif;
+    background-color: black;
+    color: #FBC16A;
+    width: 50vw;
+    height: 50vw;
+    margin: 0;
+    text-align: center;
+    padding: 2em;
+    font-size: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-container-2 p {
+    font-size: 1.09vw;
+}
+
+.feature-rep {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+}
+
+.feature-rep h3 {
+    font-family: 'Raleway', sans-serif;
+    border-bottom: 1px solid #FBC16A;
+    width: 10em;
+    padding: 0.2em;
+    margin: 0.5em;
+    font-size: 2vw;
+}
+
+.feature-rep ul {
+    padding: 1px;
+    list-style-type: none;
+    margin: 0.5em;
+    font-size: 1.3vw;
+}
+
+@media only screen and (max-width: 700px) {
+
+    .title-box {
+        background-color: black;
+        background-size: cover;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        position: sticky;
+        padding: 0;
+        margin: 0;
+    }
+
+    #title-text {
+        font-family: cursive;
+        text-align: center;
+        color: #FBC16A;
+        padding: 0.5em;
+        margin: 0;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        text-align: center;
+    }
+    .container-reverse {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        text-align: center;
+    }
+    .sub-container-1 {
+        font-family: 'Raleway', sans-serif;
+        font-size: 3vw;
+        background-color: #FBC16A;
+        width: 100vw;
+        height: 40vw;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .sub-container-1 h2 {
+        padding: 1em;
+    }
+
+    .sub-container-2 {
+        font-family: 'Open Sans', sans-serif;
+        background-color: black;
+        color: #FBC16A;
+        width: 100vw;
+        height: 90vw;
+        margin: 0;
+        text-align: center;
+        padding: 0;
+        font-size: 10vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sub-container-2 p {
+        padding-left: 1em;
+        padding-right: 1em;
+        font-size: 2vw;
+    }
+
+    .feature-rep {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    
+    .feature-rep h3 {
+        font-family: 'Raleway', sans-serif;
+        border-bottom: 1px solid #FBC16A;
+        width: 10em;
+        padding: 0.2em;
+        margin: 0.5em;
+        font-size: 3vw;
+    }
+    
+    .feature-rep ul {
+        padding: 1px;
+        list-style-type: none;
+        margin: 0.5em;
+        font-size: 2vw;
+    }
+}
