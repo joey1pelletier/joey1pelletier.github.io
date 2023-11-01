@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ayo, click me for a surprise :3</h1>
+    <h2>click me for another surprise >;3</h2>
+    <script>
+        let h1_manip = document.querySelector("h1");
+        let math_question = document.querySelector("h2");
+        h1_manip.addEventListener('click', updateH1Text);
+        math_question.addEventListener('click', askMathQuestion);
+        function updateH1Text() {
+            h1_manip.innerHTML = `<h1>yo mama</h1>`;
+        }
+        function askMathQuestion() {
+            let ask_question = prompt("What's 2+2?");
+            if(ask_question == 4) {
+                math_question.innerHTML = `<h2>correct :3</h2>`;
+            }
+            else {
+                math_question.innerHTML = `<h2>wrong</h2>`;
+            }
+
+        }
+    </script>
+</body>
+</html>
