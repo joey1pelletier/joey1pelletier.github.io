@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+body {
+    text-align: center;
+    font-family: Raleway, sans-serif;
+    background-color: #FBC16A;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.number-box {
+    background-color: white;
+    padding: 0.2em;
+    margin: 0.2em;
+    font-size: 2em;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.number-box:hover {
+    background-color: black;
+    color: white;
+}
+
+.enter {
+    font-family: Raleway, sans-serif;
+    padding: 1em;
+    margin: 2em;
+    background-color: #FBC16A;
+    color: black;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.enter:hover {
+    background-color: black;
+    color: #FBC16A;
+}
