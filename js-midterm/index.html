@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,22 +9,93 @@
     <title>Phone Number</title>
 </head>
 <body>
-    <h1>Please enter your phone number below.</h1>
+    <div class="cover"></div>
+    <h1 id="prompt">Please enter your phone number below.</h1>
+    <h3>To keep your phone number secure, please click on the dots below the specified digit position to secure the digit into our database!</h3>
+    <h3>If you need to change a digit after performing our top-of-the-line security measure, change your digit, and then click on the black dot below it's position to secure the new digit.</h3>
     <div class="container">
-        <button class="number-box" id="num-1">-</button>
-        <button class="number-box" id="num-2">-</button>
-        <button class="number-box" id="num-3">-</button>
-        <button class="number-box" id="num-4">-</button>
-        <button class="number-box" id="num-5">-</button>
-        <button class="number-box" id="num-6">-</button>
-        <button class="number-box" id="num-7">-</button>
-        <button class="number-box" id="num-8">-</button>
-        <button class="number-box" id="num-9">-</button>
-        <button class="number-box" id="num-10">-</button>
+        <div class="number-and-check">
+            <button class="number-box" id="num-1" data-value="0">0</button>
+            <div class="checkmark" onclick="openPopup('num-1')"></div>
+            <div class="pop-up">
+                <h2>Adding digit to database...</h2>
+                <div class="progress"></div>
+            </div>
+        </div>
+        <div class="number-and-check">
+            <button class="number-box" id="num-2" data-value="1">0</button>
+            <div class="checkmark" onclick="openPopup('num-2')"></div>
+            <div class="pop-up">
+                <h2>Adding digit to database...</h2>
+                <div class="progress"></div>
+            </div>
+        </div>
+        <div class="number-and-check">
+            <button class="number-box" id="num-3" data-value="2">0</button>
+            <div class="checkmark" onclick="openPopup('num-3')"></div>
+            <div class="pop-up">
+                <h2>Adding digit to database...</h2>
+                <div class="progress"></div>
+            </div>
+        </div>
+        <div class="number-and-check">
+            <button class="number-box" id="num-4" data-value="3">0</button>
+            <div class="checkmark" onclick="openPopup('num-4')"></div>
+            <div class="pop-up">
+                <h2>Adding digit to database...</h2>
+                <div class="progress"></div>
+            </div>
+        </div>
+        <div class="number-and-check">
+            <button class="number-box" id="num-5" data-value="4">0</button>
+            <div class="checkmark" onclick="openPopup('num-5')"></div>
+            <div class="pop-up">
+                <h2>Adding digit to database...</h2>
+                <div class="progress"></div>
+            </div>
+        </div>
+        <div class="number-and-check">
+            <button class="number-box" id="num-6" data-value="5">0</button>
+            <div class="checkmark" onclick="openPopup('num-6')"></div>
+            <div class="pop-up">
+                <h2>Adding digit to database...</h2>
+                <div class="progress"></div>
+            </div>
+        </div>
+        <div class="number-and-check">
+            <button class="number-box" id="num-7" data-value="6">0</button>
+            <div class="checkmark" onclick="openPopup('num-7')"></div>
+            <div class="pop-up">
+                <h2>Adding digit to database...</h2>
+                <div class="progress"></div>
+            </div>
+        </div>
+        <div class="number-and-check">
+            <button class="number-box" id="num-8" data-value="7">0</button>
+            <div class="checkmark" onclick="openPopup('num-8')"></div>
+            <div class="pop-up">
+                <h2>Adding digit to database...</h2>
+                <div class="progress"></div>
+            </div>
+        </div>
+        <div class="number-and-check">
+            <button class="number-box" id="num-9" data-value="8">0</button>
+            <div class="checkmark" onclick="openPopup('num-9')"></div>
+            <div class="pop-up">
+                <h2>Adding digit to database...</h2>
+                <div class="progress"></div>
+            </div>
+        </div>
+        <div class="number-and-check">
+            <button class="number-box" id="num-10" data-value="9">0</button>
+            <div class="checkmark" onclick="openPopup('num-10')"></div>
+            <div class="pop-up">
+                <h2>Adding digit to database...</h2>
+                <div class="progress"></div>
+            </div>
+        </div>
     </div>
     <button class="enter" id="enter-button">ENTER</button>
-    
-
     <script src="script.js"></script>
 </body>
 </html>
