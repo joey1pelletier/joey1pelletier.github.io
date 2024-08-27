@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="app">
-        <header>Random Christmas Trivia</header>
+        <header>Inspirational Quotes</header>
         <section class="quotes">
           <div class="quote-text" id="js-quote-text"></div>
           <div class="quote-text" id="js-answer-text"></div>
@@ -18,11 +18,14 @@
           <button type="button" id="js-new-quote" class="new-quote button">
             Generate a new bit of trivia!
           </button>
-          <button type="button" id="js-tweet" class="twitter button">
-            Show me the answer!
-          </button>
+          <a href="https://calendar.google.com/calendar/u/0/r" id="js-tweet" class="twitter button">
+            Add to my calendar!
+          </a>
           <!-- <a class="answer button" id="js-tweet" target="_blank" rel="noreferrer">Show me the answer!</a> -->
         </section>
+        <div class="para">
+            <p>My extension was to have the given quote show up on Google Calendar via the Google Calendar API. However, as I looked for tutorials, it requires React/Python/etc., which I am not used to. So I just included a standard link to Google Calendar. Didn't come up with any other way for extension.</p>
+        </div>
       </div>
       <script src="ica12.js"></script>
 </body>

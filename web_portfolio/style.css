@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    z-index: 1000;
+    top: 0;
+}
+
+.top-nav a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.8em;
+    color: white;
+    text-decoration: none;
+    margin: 1.75em 7em 1.75em 7em;
+}
+
+.top-nav #logo {
+    margin: 0em 5em 0em 5em;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 60px;
+}
+
+.action {
+    display: flex;
+    position: relative;
+    height: 1000px;
+}
+
+.action-first-half {
+    position: absolute;
+    font-family: 'Bodoni Moda', serif;
+    display: flex;
+    flex-direction: column;
+    left: 3em;
+}
+
+.name {
+   font-size: 7em;
+   margin-top: 4.75em;
+   margin-bottom: 0em;
+   border-bottom: 1px solid white;
+}
+
+.job-title {
+    font-size: 2.25em;
+    margin-top: 0.5em;
+    margin-bottom: 0em;
+ }
+
+.action-second-half {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 2em;
+}
+
+#portrait-silo {
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
+    
+}
+
+.text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5em;
+    width: 600px;
+    height: 150px;
+    margin-top: 1em;
+}
+
+.short-about {
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5em;
+}
+
+ .arrow-body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+
+.arrow {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-top: 4px solid white;
+    border-left: 4px solid #fff;
+    transform: rotate(1deg);
+    animation: arrow-load 2s infinite;
+}
+
+
+.arrow:nth-child(1) {
+    
+    animation-delay: -0.4s;
+}
+
+.arrow:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.projects-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-header {
+    align-self: flex-end;
+    font-family: 'Bodoni Moda', serif;
+    font-size: 3em;
+    border-bottom: 1px solid white;
+    margin-right: 1.5em;
+}
+
+.all-projects-container {
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+}
+
+.project-container {
+    padding: 2em;
+}
+
+.title-and-logos {
+    display: flex;
+}
+
+.project-title-1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-right: 12.3em;
+}
+
+.project-title-2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-right: 11.2em;
+}
+
+.project-title-3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-right: 7.25em;
+}
+.logos {
+    align-self: flex-end;
+}
+
+@keyframes arrow-load {
+    0% {
+        opacity: 0;
+        transform: rotate(-135deg) translateY(0px);
+    }
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(-135deg) translateY(0px);
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .top-nav a {
+        font-family: 'Raleway', serif;
+        font-size: 0.75em;
+        color: white;
+        text-decoration: none;
+        margin: 1.75em 4em 1.75em 4em;
+    }
+    
+    .top-nav #logo {
+        margin: 0em 2em 0em 2em;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .top-nav a {
+        font-family: 'Raleway';
+        font-size: 0.7em;
+        color: white;
+        text-decoration: none;
+        margin: 1.75em 2em 1.75em 2em;
+    }
+    
+    .top-nav #logo {
+        margin: 0em 1em 0em 1em;
+    }
+}

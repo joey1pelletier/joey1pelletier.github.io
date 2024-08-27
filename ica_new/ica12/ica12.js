@@ -1,30 +1,30 @@
-const newBtn = document.querySelector('#js-new-quote').addEventListener('click', getQuote);
+/*const newBtn = document.querySelector('#js-new-quote').addEventListener('click', getQuote);
 const newBtn2 = document.querySelector('#js-tweet').addEventListener('click', displayAnswer);
 let answer = "";
 
-const endpoint = 'https://trivia.cyberwisp.com/getrandomchristmasquestion';
+// const endpoint = 'https://trivia.cyberwisp.com/getrandomchristmasquestion';
 
-async function getQuote() { // async to make await work
-  //  console.log('Test');
-    try { // code to try to run our API
-        const response = await fetch(endpoint); // wait for the fetch of endpoint
-        if(!response.ok) { // if thingie dont work
-            throw Error(response.statusText);
-        }
-        const json = await response.json(); // retrieve json from thingie for thingie api to work
-        //console.log(json);
-        displayQuote(json['question']);
-        answer = json['answer'];
+const quote_api = 'https://type.fit/api/quotes';
+
+async function getQuote(quote_api) { // async to make await work
+  
+    const response = await fetch(quote_api);
+    const data = await response.json();
+    console.log(data);
+    if (!response.ok) {
+        throw Error(response.statusText);
     }
-    catch(err) { // runs if something goes wrong
-        console.log(err);
-        alert('Failed to fetch new quote');
-    }
+    displayQuote(data);
 }
 
+getQuote(quote_api);
+
 function displayQuote(question) {
-    const questionTxt = document.querySelector('#js-quote-text');
-    questionTxt.textContent = question;
+    const quoteTxt = document.querySelector('#js-quote-text');
+    let randomIndex = Math.floor(Math.random() * data.length);
+    const randomQuote = data[randomIndex].text; 
+    quoteTxt.textContent = randomQuote;
+    // questionTxt.textContent = question;
 }
 
 function displayAnswer(answer) {
@@ -35,5 +35,41 @@ function displayAnswer(answer) {
 function testFunction() {
     console.log('bruh');
 }
+*/
+const quote_api = 'https://type.fit/api/quotes';
+const newBtn = document.querySelector('#js-new-quote').addEventListener('click', () => getQuote(quote_api));
+const newBtn2 = document.querySelector('#js-tweet').addEventListener('click', addToCalendar);
+let answer = "";
 
-getQuote(); // will run getQuote when page loads
+
+
+async function getQuote(quote_api) {
+    try {
+        let response = await fetch(quote_api);
+        let data = await response.json();
+        console.log(data);
+        if (!response.ok) {
+            throw Error(response.statusText);
+        }
+        displayQuote(data);
+    } 
+    catch (error) {
+        console.error('Error fetching quote:', error);
+    }
+}
+
+function displayQuote(data) {
+    let quoteTxt = document.querySelector('#js-quote-text');
+    let randomIndex = Math.floor(Math.random() * data.length);
+    let randomQuote = data[randomIndex].text;
+    let randomQuoteAuthor = data[randomIndex].author.slice(0, -10);
+    quoteTxt.textContent = randomQuote + ' - ' + randomQuoteAuthor;
+}
+
+function testFunction() {
+    console.log('bruh');
+}
+
+getQuote(quote_api);
+
+
