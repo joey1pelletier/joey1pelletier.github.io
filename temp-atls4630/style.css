@@ -1,0 +1,18 @@
+.my-flexbox-container {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+#item-1 {
+    background-color: blue;
+}
+
+#item-2 {
+    background-color: green;
+}
+
+#item-3 {
+    background-color: red;
+}

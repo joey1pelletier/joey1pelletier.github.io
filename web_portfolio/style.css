@@ -180,6 +180,30 @@ body {
     align-self: flex-end;
 }
 
+.left-link-arrow {
+    width: 40px;
+    height: 40px;
+    border-top: 2px solid white;
+    border-left: 2px solid #fff;
+    transform: rotate(315deg);
+    margin-top: 0.3em;
+}
+
+.right-link-arrow {
+    width: 40px;
+    height: 40px;
+    border-bottom: 2px solid white;
+    border-right: 2px solid #fff;
+    transform: rotate(315deg);
+    margin-top: 0.3em;
+}
+
+.all-projects-link {
+    display: flex;
+    justify-content: center;
+    font-family: 'Bodoni Moda', serif;
+    font-size: 1.5em;
+}
 @keyframes arrow-load {
     0% {
         opacity: 0;
