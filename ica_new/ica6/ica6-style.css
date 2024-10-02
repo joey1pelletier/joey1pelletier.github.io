@@ -44,14 +44,12 @@
   }
 
   .top {
-    object-fit: cover;
-    object-position: top;
+    
     width: 100vw;
   }
   
   .bottom {
-    object-fit: cover;
-    object-position: bottom;
+    
     width: 100vw;
   }
   /* Your CSS below here */
