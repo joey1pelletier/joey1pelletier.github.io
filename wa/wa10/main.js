@@ -2,7 +2,9 @@ const customName = document.getElementById('customname');
 const randomize = document.querySelector('.randomize');
 const story = document.querySelector('.story');
 let custom_name = "Bob";
-
+let string = "stringie";
+string = `${custom_name} and ${string}`;
+console.log(string);
 const storyText = "It was 94 fahrenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. " + custom_name + " saw the whole thing, but was not surprised — :insertx: weighs 300 pounds, and it was a hot day.";
 const insertX = ["Ronald Reagan", "Chris Pratt", "The Devil Himself"];
 const insertY = ["an overpriced Goodwill in Boulder", "a boba shop", "Cincinatti"];

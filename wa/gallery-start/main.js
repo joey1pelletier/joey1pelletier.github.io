@@ -18,6 +18,7 @@ for(let i = 0; i < 5; i++) {
     newImage.setAttribute('src', img_names[i]);
     newImage.setAttribute('alt', img_alts[i]);
     thumbBar.appendChild(newImage);
+    console.log(thumbBar);
     newImage.addEventListener('click', () => {
         displayedImage.src = newImage.src;
     });

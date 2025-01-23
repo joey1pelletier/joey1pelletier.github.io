@@ -36,7 +36,7 @@ function testFunction() {
     console.log('bruh');
 }
 */
-const quote_api = 'https://type.fit/api/quotes';
+const quote_api = 'https://catfact.ninja/fact';
 const newBtn = document.querySelector('#js-new-quote').addEventListener('click', () => getQuote(quote_api));
 const newBtn2 = document.querySelector('#js-tweet').addEventListener('click', addToCalendar);
 let answer = "";
